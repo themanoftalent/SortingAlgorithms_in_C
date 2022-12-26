@@ -1,25 +1,24 @@
-// put in order 96 85 1 2 34 5 45 74 25 12 6
+#include <stdio.h>
 
-#include "stdlib.h"
-#include "stdio.h"
+int main(void) {
+    int numbers[] = {96, 85, 1, 2, 34, 5, 45, 74, 25, 12, 6};
+    int length = sizeof(numbers) / sizeof(int);
 
-int main() {
-    int i,j,temp;
-    int dizi[11] = {96,85,1,2,34,5,45,74,25,12,6};
-    
-    for(i=0; i<11; i++) {
-        for(j=0; j<11; j++) {
-            if(dizi[i] < dizi[j]) {
-                temp = dizi[i];
-                dizi[i] = dizi[j];
-                dizi[j] = temp;
+    for (int i = 0; i < length; i++) {
+        for (int j = 0; j < length - i - 1; j++) {
+            if (numbers[j] > numbers[j + 1]) {
+                int temp = numbers[j];
+                numbers[j] = numbers[j + 1];
+                numbers[j + 1] = temp;
             }
         }
     }
-    
-    for(i=0; i<11; i++) {
-        printf("%d ",dizi[i]);
+
+    printf("Sorted array: ");
+    for (int i = 0; i < length; i++) {
+        printf("%d ", numbers[i]);
     }
-    
+    printf("\n");
+
     return 0;
 }
