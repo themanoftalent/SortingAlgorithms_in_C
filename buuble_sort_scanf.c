@@ -1,25 +1,25 @@
- #include <stdio.h>
+#include <stdio.h>
  
  int main() {
  
- 	int sayilar[5],i,j,gecici; //gecici değişkeni kullanarak sayıları yer değiştireceğiz.
+ 	int sayilar[11],i,j,gecici; 
  
- 	for(i=0; i<5; i++) { //kullanıcıdan 5 sayı alıyoruz.
+ 	for(i=0; i<11; i++) { 
  
  		printf("Sayi giriniz:"); 
  		scanf("%d",&sayilar[i]);
  
  	}
  
- 	for(i=0; i <5; i++) { //sayıları sıralıyoruz.
+ 	for(i=0; i <11; i++) { 
  
- 		for(j=0; j<5; j++) { //sayıları sıralarken bir önceki sayıyla karşılaştırıyoruz.
+ 		for(j=0; j<11; j++) { 
  
- 			if(sayilar[i]<sayilar[j]) { //eğer bir önceki sayıdan küçükse yer değiştiriyoruz.
+ 			if(sayilar[i]<sayilar[j]) { 
  
- 				gecici = sayilar[i]; //gecici değişkene bir önceki sayıyı atıyoruz.
- 				sayilar[i] = sayilar[j]; //bir önceki sayıyı bir sonraki sayıya atıyoruz.
- 				sayilar[j] = gecici; //bir sonraki sayıyı bir önceki sayıya atıyoruz.
+ 				gecici = sayilar[i]; 
+ 				sayilar[i] = sayilar[j]; 
+ 				sayilar[j] = gecici; 
  
  			}
  
@@ -27,7 +27,7 @@
  
  	}
  
- 	for(i=0; i<5; i++) {
+ 	for(i=0; i<11; i++) {
  
  		printf("%d ",sayilar[i]);
  
