@@ -2,8 +2,8 @@
 
 
 
-Bubble Sort
-Insertion Sort
-Selection Sort
-Quick Sort
-Merge Sort
+Bubble Sort <br>
+Insertion Sort  <br>
+Selection Sort  <br>
+Quick Sort  <br>
+Merge Sort  <br>
