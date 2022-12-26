@@ -1,4 +1,3 @@
-
  #include <stdio.h>
  
  int main() {
@@ -12,7 +11,7 @@
  
  	}
  
- 	for(i=0; i>5; i++) { //sayıları sıralıyoruz.
+ 	for(i=0; i <5; i++) { //sayıları sıralıyoruz.
  
  		for(j=0; j<5; j++) { //sayıları sıralarken bir önceki sayıyla karşılaştırıyoruz.
  
