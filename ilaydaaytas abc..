@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j;
+    int x;
+    char array[23]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','y','z'};
+    for (i=5;i>0;i--)
+    {
+        for(j=0;j<i;j++)
+        {
+        
+        printf("%c",array[j]);
+        
+        }
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
