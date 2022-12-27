@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+
+	int en,boy,i,j;
+	printf("En Degeri: ");
+	scanf("%d",&en);
+	printf("Boy Degeri: ");
+	scanf("%d",&boy);
+	for(j=1;j<=en;j++)
+		{
+			printf("*");
+		}
+	for(i=1;i<=boy;i++){
+		
+		printf("\n");
+		
+	
+		printf("*");
+		for(j=1;j<=en-2;j++)
+		{
+			printf(" ");
+			
+		}
+		printf("*");
+		
+	}
+		printf("\n");
+for(j=1;j<=en;j++)
+		{
+			printf("*");
+		}
+
+	
+	
+	return 0;
+}
