@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 
 int main()
@@ -10,7 +8,7 @@ int main()
     
     for(i=0;i<=k;i++){
         for(j=1;j<=i;j++){
-            printf("*");
+            printf("+");
             
         }
         printf("\n");
@@ -18,3 +16,4 @@ int main()
 
     return 0;
 }
+
