@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    
+    char dizi[23]={'a','b','c','d','e'};
+    int i,j;
+    
+    for(i=0;i<=4;i++){
+        for(j=4-i;j>=0;j--){
+        printf("%c",dizi[j]);
+    }
+    printf("\n");
+    }
+
+    return 0;
+}
