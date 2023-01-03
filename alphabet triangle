@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+
+int i,j,k,l;
+char c;
+	printf("Enter the length of one edge of a triangle:");
+	scanf("%d",&l);
+    
+	for(i=1;i<=l;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			for(k=l-i;k>=0 && j==1;k--)
+			{
+				printf(" ");
+			}
+			printf("%c",j+64);
+		}
+		printf("\n");
+	}
+
+
+
+	return 0;
+}
