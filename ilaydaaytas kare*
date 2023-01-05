@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j;
+    int number;
+    printf("give a number=");
+    scanf("%d",&number);
+    
+    for (i=number;i>0;i--)
+    {
+        for(j=0;j<number;j++)
+        {
+        printf("*");
+        
+        }
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
